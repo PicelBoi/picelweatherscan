@@ -1,5 +1,6 @@
 # Weatherscan Simulator
 Weatherscan simulation in HTML/JS/CSS
+(This version uses weather.gov data, so basically anyone outside of the USA just can't see their city using this emulator. May switch to a different provider if there is demand for it.)
 
 Visit https://weatherscan.net/?Philadelphia for a demo
 
