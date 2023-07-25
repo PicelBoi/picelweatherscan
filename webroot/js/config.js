@@ -1,7 +1,7 @@
 //Some of the settings may or may not work as this is not a fully completed update. Mainly Appearance settings and weather variables that arent finished.
 //Input API Keys below. If no API is inputted, sim will default to no report.
-var api_key = '';
-var map_key = '';
+var api_key = 'e1f10a1e78da46f5b10a1e78da96f525';
+var map_key = 'pk.eyJ1Ijoid2VhdGhlciIsImEiOiJjaW4wbzllcjkwYWtrd2JsdWl3dG1hZjZ1In0.AdcjoWQiVfvjHfOB0nsyeQ';
 
 //Apperance settings. Fields left blank will use defaults. Will only refresh upon reload.
 var apperanceSettings = {
@@ -81,14 +81,14 @@ var severeLoopSettings = {radarTransition:true,order:[
 var audioSettings = {
   enableMusic: true, //Something is wrong if you set this to false.
   order: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33], //The order the music will play. To include or exclude tracks add or remove their number to the order. Default is 1-33. 34-46 are known 2003 tracks excluding duplicates with 2007. 47-51 are known 2006 tracks excluding duplicates with 2007 and 2003. 52-53 are other weatherscan tracks from unknown year. 54-66 is Trammel Starks 1 not used in any other section. 67-76 is Trammel Starks 2 excluding duplicates. 77-83 is Trammel Starks 3 excluding duplicates.
-  shuffle: false, //Shuffle audio. Default is false.
+  shuffle: true, //Shuffle audio. Default is false.
   randomStart: true, //Starts the order from a random spot. Default is true.
   enableNarrations: true, //Play narrations. Default is true.
-  narrationType: 'female',//allen or female. Default is female.
+  narrationType: 'allen',//allen or female. Default is female.
 }
 var locationSettings = {
   mainLocation:{
-    displayName:"",//Name that will show up on the sim.
+    displayName:"Weirderscan",//Name that will show up on the sim.
     searchQuery:{ //Type and val are required fields for search to work. Will be overridden if location is given in URL.
       type:"",//Leave type blank to use automatic search. "geocode", "state", "district", "city", "locality", "neighborhood", "postal" (zipcode), "address", "poi", "pws" (personal weatherstation) //If geocode is used all otherfields but val will be ignored.
       fuzzy:true, //Attempt approximate search.
