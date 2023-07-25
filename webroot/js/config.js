@@ -1,7 +1,7 @@
 //Some of the settings may or may not work as this is not a fully completed update. Mainly Appearance settings and weather variables that arent finished.
 //Input API Keys below. If no API is inputted, sim will default to no report.
 var api_key = 'e1f10a1e78da46f5b10a1e78da96f525';
-var map_key = 'sk.eyJ1IjoicGljZWxib2kiLCJhIjoiY2xraXFhZzl6MDV3bDN0azZ0YjNrYmgwYSJ9.8plxnS0F8bbz3hI1pAaCuQ';
+var map_key = 'pk.eyJ1IjoicGljZWxib2kiLCJhIjoiY2xoZjl5MXdyMTdtZDNsazFwcGJvMGhiMCJ9.dc7ooMG625gCYoiEhHSCnw';
 
 //Apperance settings. Fields left blank will use defaults. Will only refresh upon reload.
 var apperanceSettings = {
