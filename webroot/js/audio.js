@@ -32,20 +32,10 @@ function WeatherAudio() {
 
 			// insert track names
 			for (var i = 0; i < audioSettings.order.length; i++) {
-				if (audioSettings.order[i]<34) {
-					arr.push(musicpath + "Weatherscan Track " + String(audioSettings.order[i]) + '.mp3');
-				} else if (audioSettings.order[i] < 46) {
-					arr.push(musicpath + "2003 Weatherscan Track " + String(audioSettings.order[i]-33) + '.mp3');
-				} else if (audioSettings.order[i] < 51) {
-					arr.push(musicpath + "2006 Weatherscan Track " + String(audioSettings.order[i]-45) + '.mp3');
-				} else if (audioSettings.order[i] < 55) {
-					arr.push(musicpath + "Removed Weatherscan Track " + String(audioSettings.order[i]-50) + '.mp3');
-				} else if (audioSettings.order[i] < 68) {
-					arr.push(musicpath + "Trammel Starks 1 Track " + String(audioSettings.order[i]-54)+ '.mp3');
-				}	else if (audioSettings.order[i] < 78) {
-					arr.push(musicpath + "Trammel Starks 2 Track " + String(audioSettings.order[i]-67) + '.mp3');
-				} else if (audioSettings.order[i] < 84) {
-					arr.push(musicpath + "Trammel Starks 3 Track " + String(audioSettings.order[i]-77) + '.mp3');
+				if (audioSettings.order[i]<20) {
+					arr.push(musicpath + "(" + String(audioSettings.order[i]) + ').wav');
+				} else if (audioSettings.order[i] > 20) {
+					console.log("Only 20 songs. Probably add more soon. -PicelBoi")
 				}
 			}
 
@@ -193,7 +183,7 @@ function WeatherAudio() {
 
 	// plays the vocal current conditions announcement
 	this.playCurrentConditions = function () {
-		startPlaying(['/localvocals/narrations/'+audioSettings.narrationType+'/Your_current_conditions.mp3'], false);
+		startPlaying(['/localvocals/narrations/'+audioSettings.narrationType+'/PB_CurrentConditions'], false);
 	}
 	this.playLocalRadar = function() {
 		startPlaying(['/localvocals/narrations/'+audioSettings.narrationType+'/The_local_Doppler_radar.mp3'], false);
