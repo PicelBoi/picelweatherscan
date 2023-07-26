@@ -1,6 +1,6 @@
 # Weatherscan Simulator
 Weatherscan simulation in HTML/JS/CSS
-
+This version is deprecated for Weirderscan - https:\\github.com/PicelBoi/Weirderscan
 Visit https://weatherscan.net/?Philadelphia for a demo
 
 ## Donate:
